@@ -22,14 +22,18 @@ public class MenuHandler : MonoBehaviour {
         mainAudio = GameObject.Find("Audio Source").GetComponent<AudioSource>();
         dirLight = GameObject.Find("Directional Light").GetComponent<Light>();
 
-        volSlider.value = PlayerPrefs.GetFloat("Audio Source");
-        brightSlider.value = PlayerPrefs.GetFloat("Directional Light");
+        
 
         return;
 	}
-	
-	// Update is called once per frame
-	
+    private void Awake()
+    {
+        volSlider.value = PlayerPrefs.GetFloat("Audio Source");
+        brightSlider.value = PlayerPrefs.GetFloat("Directional Light");
+    }
+
+    // Update is called once per frame
+
     public void LoadGame()
     {
         PlayerPrefs.SetFloat("Audio Source", mainAudio.volume);

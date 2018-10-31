@@ -9,8 +9,6 @@ public class MenuInputHandler : MonoBehaviour
 {
     #region Variables
     [Header("Keys")]
-    public KeyCode holdingKey;
-    public KeyCode forward, backward, left, right,jump, crouch,sprint, interact;
 
     [Header("KeyBind References")]
     public Text forwardText;
