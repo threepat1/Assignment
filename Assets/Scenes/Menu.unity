@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6403,20 +6403,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa857610c8df26a44a6048f8098c87ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  holdingKey: 0
-  forward: 0
-  backward: 0
-  left: 0
-  right: 0
-  jump: 0
-  crouch: 0
-  sprint: 0
-  interact: 0
   forwardText: {fileID: 1397488247}
   backwardText: {fileID: 1501737684}
   jumpText: {fileID: 1264714517}
-  leftText: {fileID: 0}
-  rightText: {fileID: 0}
+  leftText: {fileID: 2076734995}
+  rightText: {fileID: 1145496337}
 --- !u!1 &2076734993
 GameObject:
   m_ObjectHideFlags: 0
