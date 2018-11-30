@@ -31,16 +31,7 @@ public class CharacterHandler : MonoBehaviour
     public KeyCode forward, backward, left, right, jump;
     
     #endregion
-    #region Stamina
-    int dex;
-    int str;
-    int wis;
-    int intel;
-    int chr;
-    int con;
-
-
-    #endregion
+ 
 
     #endregion
     [Header("Camera Connection")]
@@ -53,7 +44,7 @@ public class CharacterHandler : MonoBehaviour
     {
         //set max health to 100
         maxHealth = 100f;
-        maxHealth += con * 5;
+        
         //set current health to max
         curHealth = maxHealth;
         //make sure player is alive
@@ -146,7 +137,7 @@ public class CharacterHandler : MonoBehaviour
         GUI.Box(new Rect(6 * scrW, 0.75f * scrH, curExp * (4 * scrW) / maxExp, 0.5f * scrH), "");
         //current experience divided by the posistion on screen and timesed by the total max experience
 
-       
+        GUI.TextField(new Rect(12 * scrW, 0.25f * scrH, 3 * scrW, 1 * scrH), "Level:" + level +""+ "Exp:" + curExp);
         //GUI Draw Texture on the screen that has the mini map render texture attached
         GUI.DrawTexture(new Rect(13.75f * scrW, 0.25f * scrH, 2 * scrW, 2 * scrH), miniMap);
     }

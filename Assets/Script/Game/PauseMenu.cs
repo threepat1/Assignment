@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour {
 
-    public static bool GameIsPaused = false;
+    public static bool paused = false;
 
     public GameObject pauseMenu, optionMenu;
     public bool showMenu;
@@ -15,8 +15,8 @@ public class PauseMenu : MonoBehaviour {
 
     public Slider soundSlider;
     public Slider lightSlider;
+    public Slider ambientSlider;
 
-    public GameObject cam1;
     public GameObject mainCam;
     public GameObject player;
 
@@ -103,6 +103,7 @@ public class PauseMenu : MonoBehaviour {
         dirLight.intensity = lightSlider.value;
 
     }
+
     bool OptionToggle()
     {
         if (showMenu)
@@ -125,13 +126,17 @@ public class PauseMenu : MonoBehaviour {
             
             soundSlider.value = soundAudio.volume;
             lightSlider.value = dirLight.intensity;
-            
+            ambientSlider.value = RenderSettings.ambientIntensity;
 
             return true;
         }
 
     }
-   public void Back()
+    public void Ambient()
+    {
+        RenderSettings.ambientIntensity = ambientSlider.value;
+    }
+    public void Back()
     {
         showMenu = false;
         pauseMenu.SetActive(true);

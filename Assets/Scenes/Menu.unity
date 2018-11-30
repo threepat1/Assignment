@@ -6403,11 +6403,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa857610c8df26a44a6048f8098c87ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardText: {fileID: 1397488247}
-  backwardText: {fileID: 1501737684}
-  jumpText: {fileID: 1264714517}
-  leftText: {fileID: 2076734995}
-  rightText: {fileID: 1145496337}
+  forwardText: {fileID: 0}
+  backwardText: {fileID: 0}
+  jumpText: {fileID: 0}
+  leftText: {fileID: 0}
+  rightText: {fileID: 0}
 --- !u!1 &2076734993
 GameObject:
   m_ObjectHideFlags: 0

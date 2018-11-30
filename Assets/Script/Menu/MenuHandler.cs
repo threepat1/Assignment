@@ -16,12 +16,13 @@ public class MenuHandler : MonoBehaviour {
     public int resIndex;
     public bool isFullScreen;
     public Dropdown resDropdown;
+    public RenderSettings render;
 
     // Use this for initialization
     void Start () {
         mainAudio = GameObject.Find("Audio Source").GetComponent<AudioSource>();
         dirLight = GameObject.Find("Directional Light").GetComponent<Light>();
-
+        
         
 
         return;
@@ -30,6 +31,7 @@ public class MenuHandler : MonoBehaviour {
     {
         volSlider.value = PlayerPrefs.GetFloat("Audio Source");
         brightSlider.value = PlayerPrefs.GetFloat("Directional Light");
+        
     }
 
     // Update is called once per frame
@@ -38,6 +40,7 @@ public class MenuHandler : MonoBehaviour {
     {
         PlayerPrefs.SetFloat("Audio Source", mainAudio.volume);
         PlayerPrefs.SetFloat("Directional Light", dirLight.intensity);
+       
         SceneManager.LoadScene(1);
     }
     public void ExitGame()

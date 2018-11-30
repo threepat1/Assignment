@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;//interacting with scene change
 using UnityEngine.UI;//interacting with GUI elements
 using UnityEngine.EventSystems;//control the event (this is needed to save keybindings)
 
+
 public class MenuInputHandler : MonoBehaviour
 {
     #region Variables
